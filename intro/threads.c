@@ -9,7 +9,7 @@ int loops;
 void *worker(void *arg) {
     int i;
     for (i = 0; i < loops; i++) {
-	counter++;
+	counter++; //need to protect this counter
     }
     return NULL;
 }
